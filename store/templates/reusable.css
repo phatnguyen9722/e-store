@@ -28,6 +28,14 @@
     width: 100%;
 }
 
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
 .p-l-1 {
     padding-left: 1rem;
 }
