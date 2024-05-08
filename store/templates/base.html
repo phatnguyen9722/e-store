@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     
-    <link rel="stylesheet" href="./reusable.css">
-    <link rel="stylesheet" href="./style.css">
+    <!-- #region Internal CSS -->
+    <link href="{% static '/css/reusable.css' %}" rel="stylesheet">
+    <link href="{% static '/css/style.css' %}" rel="stylesheet">
+    <!-- #endregion Internal CSS -->
+
 </head>
 <body>
     <!-- =================== HEADER  =================== -->
@@ -62,7 +66,14 @@
 
     <!-- =================== CONTENT  =================== -->
     <!-- #region Content -->
+    <!-- ============== CONTENT ==============  -->
+    {% block banner-slider %} {% endblock banner-slider %}
 
+    {% block main-content %} {% endblock main-content %}
+
+    {% block cart-content %} {% endblock cart-content %}
+
+    {% block login-content %} {% endblock login-content%}
     <!-- #endregion Content -->
 
     <!-- =================== FOOTER  =================== -->

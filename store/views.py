@@ -1,15 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Product
 from django.template import loader
 
 
 def Home(req):
-    products = Product.objects.all().values()
-    template = loader.get_template("home.html")
-    context = {"products": products}
-
-    return HttpResponse(template.render(context=context, request=req))
+    return render(req, "home.html")
 
 
 def Cart(req):
