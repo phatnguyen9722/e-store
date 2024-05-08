@@ -1,0 +1,39 @@
+/* =================== VARIABLES  =================== */
+/* #region Variables */
+:root {
+    --text-color: #ffffff;
+    --text-hover-color: #FFC470;
+    --header-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,27,34,1) 45%, rgba(35,11,64,1) 100%);
+}
+/* #endregion Variables */
+
+
+/* =================== REUSABLE  =================== */
+/* #region Reusable */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.three-columns {
+    width: calc(100%/3);
+    height: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.p-l-1 {
+    padding-left: 1rem;
+}
+
+.p-r-1 {
+    padding-right: 1rem;
+}
+/* #endregion Reusable */
+

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* =================== HEADER  =================== */
+/* #region Header */
+header {
+    width: 100%;
+    height: 60px;
+    background: var(--header-background);
+}
+
+/* =================== NAVBAR  =================== */
+nav {
+    padding-top: 1rem;
+}
+.nav__list-item a {
+    color: var(--text-color);
+}
+.nav__list-item:hover a {
+    color: var(--text-hover-color);
+}
+.nav__list--right {
+    justify-content: end;
+}
+/* #endregion Header  */
