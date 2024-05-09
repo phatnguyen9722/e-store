@@ -4,39 +4,43 @@
 <!-- #region Slider -->
 {% block banner-slider %}
 <div id="slider">
-    Banner
+    Banner here...
 </div>
 {% endblock banner-slider %}
 <!-- #endregion Slider -->
 
 <!-- #region main-content -->
 {% block main-content %}
-<div class="main-content-block container">
+
+<div class="product_container">
+    <h3>Products</h3>
     <div class="products">
         {% for product in products|slice:":4" %}
-            <div class="product">
-                <h6><strong>{{ product.title }}</strong></h6>
-                <hr>
-                <p>{{ product.description }}</p>
-                <p>Stock: {{ product.inventory }}</p>
-                <button class="btn add-btn">Add to Cart</button>
-                <button class="btn more-btn">More</button>
-                <h4 class="price"><strong>$ {{ product.price | floatformat:2}}</strong></h4>
-            </div>
-        {% endfor %}
-        {% for product in products|slice:"4:8" %}
-            <div class="product">
-                <h6><strong>{{ product.title }}</strong></h6>
-                <hr>
-                <p>{{ product.description }}</p>
-                <p>Stock: {{ product.inventory }}</p>
-                <button class="btn add-btn">Add to Cart</button>
-                <button class="btn more-btn">More</button>
-                <h4 class="price"><strong>$ {{ product.price | floatformat:2}}</strong></h4>
-            </div>
+        <div class="product">
+            <h6><strong>{{ product.title }}</strong></h6>
+            <hr>
+            <p>{{ product.description }}</p>
+            <p>Stock: {{ product.inventory }}</p>
+            <button class="btn add-btn">Add to Cart</button>
+            <button class="btn more-btn">More</button>
+            <h4 class="price"><strong>$ {{ product.price | floatformat:2}}</strong></h4>
+        </div>
         {% endfor %}
     </div>
-    
+    <div class="products">
+        {% for product in products|slice:"4:8" %}
+        <div class="product">
+            <h6><strong>{{ product.title }}</strong></h6>
+            <hr>
+            <p>{{ product.description }}</p>
+            <p>Stock: {{ product.inventory }}</p>
+            <button class="btn add-btn">Add to Cart</button>
+            <button class="btn more-btn">More</button>
+            <h4 class="price"><strong>$ {{ product.price | floatformat:2}}</strong></h4>
+        </div>
+        {% endfor %}
+    </div>
 </div>
+    
 {% endblock main-content %}
 <!-- #endregion main-content -->

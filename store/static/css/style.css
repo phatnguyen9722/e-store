@@ -11,7 +11,7 @@
 header {
     width: 100%;
     height: auto;
-    background: var(--header-background);
+    background: var(--header-footer-background);
 }
 
 /* =================== NAVBAR  =================== */
@@ -45,3 +45,17 @@ nav {
     flex-basis: 25%;
 }
 /* #endregion Content */
+
+
+/* =================== FOOTER  =================== */
+/* #region Footer */
+footer {
+    width: 100%;
+    background: var(--header-footer-background);
+    color: var(--text-color);
+}
+
+.footer {
+    padding: 10px 0 10px 0;
+}
+/* #endregion Footer */

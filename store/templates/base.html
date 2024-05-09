@@ -67,19 +67,22 @@
     <!-- =================== CONTENT  =================== -->
     <!-- #region Content -->
     <!-- ============== CONTENT ==============  -->
-    {% block banner-slider %} {% endblock banner-slider %}
+    <div class="container">
+        {% block banner-slider %} {% endblock banner-slider %}
+    </div>
 
-    {% block main-content %} {% endblock main-content %}
-
-    {% block cart-content %} {% endblock cart-content %}
-
-    {% block login-content %} {% endblock login-content%}
+    <div class="main-content-block container">
+        {% block main-content %} {% endblock main-content %}
+    </div>
     <!-- #endregion Content -->
 
     <!-- =================== FOOTER  =================== -->
     <!-- #region Footer -->
     <footer id="footer">
-        Copyright﹫ 2024
+        <div class="footer container">
+            Copyright﹫ 2024
+        </div>
+        
     </footer>
     <!-- #endregion Footer -->
 </body>

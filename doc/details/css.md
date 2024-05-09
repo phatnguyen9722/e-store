@@ -13,5 +13,5 @@
 
 ### Padding
 ----
-`p-f-1`: padding left 1rem 
+`p-f-1`: padding left 1rem </br>
 `p-r-1`: padding right 1rem

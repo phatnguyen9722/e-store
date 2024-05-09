@@ -3,7 +3,7 @@
 :root {
     --text-color: #ffffff;
     --text-hover-color: #FFC470;
-    --header-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,27,34,1) 45%, rgba(35,11,64,1) 100%);
+    --header-footer-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,27,34,1) 45%, rgba(35,11,64,1) 100%);
 }
 /* #endregion Variables */
 
