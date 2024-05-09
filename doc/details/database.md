@@ -5,6 +5,7 @@ title: Product
 ---
 erDiagram
     PRODUCT {
+        string sku PK
         string title
         string description
         float price
@@ -12,6 +13,7 @@ erDiagram
         datetfield last_updated
     }
 ```
+- sku = Stock Keeping Unit (Don vi luu kho)
 
 ```mermaid
 ---
@@ -24,5 +26,6 @@ erDiagram
         email_field email
         string phone
         datefield birth_date
+        string membership
     }
 ```
