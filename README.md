@@ -5,13 +5,19 @@
     - Store
 
 ```mermaid
-graph TD;
+---
+title: Apps in this Project
+---
+graph LR;
     Core --> Store;
 ```
 
 #### <ins>Pages in Store App:</ins>
 ```mermaid
-graph TD;
+---
+title: Pages in this project
+---
+graph LR;
     Base --> Home.html;
     Base --> Login.html;
     Base --> Checkout.html;
