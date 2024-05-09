@@ -1,4 +1,5 @@
-👉 [Back to main Document](./index.md)
+👈 [Back to main Document](../index.md)
+
 #### Main Steps
 `django-admin startproject <project-name> <location>`
 - In this project: <project-name> is core.
@@ -9,7 +10,7 @@
 ##### To run this project
 ```
 python manage.py runserver
-    or:
+    Or:
 python manage.py runserver <customize-port>
 ```
 #### To migrate Database

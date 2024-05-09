@@ -1,5 +1,6 @@
-### How Docker works with Django?
+👈 [Back to main Document](../index.md)
 
+### How Docker works with Django?
 
 ```mermaid
 ---
@@ -24,7 +25,7 @@ flowchart LR
             id3["OS"]
             id4["Database"]
             id5["Django App"]
-            id6["Package]
+            id6["Package"]
         end
     end
     
