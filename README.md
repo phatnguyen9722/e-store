@@ -18,5 +18,8 @@ graph TD;
     Base --> Cart.html;
 ```
 
+#### Basic rules for commit
+👉 [Click Here](./doc/commit-rules.md)
+
 #### More Document for this Project
 👉 [More](./doc/index.md)
