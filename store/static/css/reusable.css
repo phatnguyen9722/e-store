@@ -19,8 +19,18 @@
     display: flex;
 }
 
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
 .three-columns {
     width: calc(100%/3);
+    height: auto;
+}
+
+.four-columns {
+    width: calc(100%/4);
     height: auto;
 }
 

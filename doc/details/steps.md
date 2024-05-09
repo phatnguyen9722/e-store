@@ -18,3 +18,6 @@ python manage.py runserver <customize-port>
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+#### Create Super User
+`python manage.py createsuperuser`

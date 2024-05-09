@@ -32,3 +32,16 @@ nav {
     cursor: pointer;
 }
 /* #endregion Header  */
+
+/* =================== BODY CONTENT =================== */
+/* #region Content */
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex-basis: 25%;
+}
+/* #endregion Content */
