@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Product
 from django.template import loader
 from django.views import View
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, decorators
 
 
 class Index(View):
@@ -18,9 +18,12 @@ class Index(View):
 class ViewUser(View):
     def get(self, req):
         if not req.user.is_authenticated:
-            return HttpResponse("Please Login!")
+            return redirect("Please Login!")
         else:
             return HttpResponse("<h2>Hello User</h2>")
+
+    def post(self, req):
+        pass
 
 
 class Login(View):
@@ -28,9 +31,9 @@ class Login(View):
         return render(req, "pages/login/login.html")
 
     def post(self, req):
-        user_name = req.POST.get("username")
+        username = req.POST.get("username")
         password = req.POST.get("password")
-        current_user = authenticate(username=user_name, password=password)
+        current_user = authenticate(username=username, password=password)
         if current_user is None:
             return HttpResponse("Login Failed, User does not exist!")
         login(req, current_user)

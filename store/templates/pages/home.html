@@ -13,11 +13,13 @@
 {% block main-content %}
 
 <div class="product_container">
-    <h3>Products</h3>
+    <h3 class="product_title">Product</h3>
+    <hr>
     <div class="products">
-        {% for product in products|slice:":4" %}
-        <div class="product">
-            <h6><strong>{{ product.title }}</strong></h6>
+        {% for product in products|slice:":4" %} 
+        <div class="product-card">
+            <img class="product-img" src="" alt="">
+            <h5><strong>{{ product.title }}</strong></h5>
             <hr>
             <p>{{ product.description }}</p>
             <p>Stock: {{ product.inventory }}</p>
@@ -29,8 +31,9 @@
     </div>
     <div class="products">
         {% for product in products|slice:"4:8" %}
-        <div class="product">
-            <h6><strong>{{ product.title }}</strong></h6>
+        <div class="product-card">
+            <img class="product-img" src="" alt="">
+            <h5><strong>{{ product.title }}</strong></h5>
             <hr>
             <p>{{ product.description }}</p>
             <p>Stock: {{ product.inventory }}</p>
