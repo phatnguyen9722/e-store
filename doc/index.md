@@ -7,5 +7,8 @@
 ### Main Steps/Commands in this project
 👉 [Steps Document](./details/steps.md)
 
+### CSRF 
+👉 [Steps Document](./details/csrf.md)
+
 ### Want to know more about Docker 😎
 👉 [Click here](./details/docker.md)
