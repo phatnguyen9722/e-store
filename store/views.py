@@ -15,6 +15,14 @@ class Index(View):
         return HttpResponse(template.render(context=context, request=req))
 
 
+class ViewUser(View):
+    def get(self, req):
+        if not req.user.is_authenticated:
+            return HttpResponse("Please Login!")
+        else:
+            return HttpResponse("<h2>Hello User</h2>")
+
+
 class Login(View):
     def get(self, req):
         return render(req, "pages/login/login.html")
