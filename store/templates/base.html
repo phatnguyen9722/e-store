@@ -53,9 +53,15 @@
                     <li class="nav__list-item p-r-1">
                         <a href="/cart">Cart</a>
                     </li>
-                    <li class="nav__list-item">
-                        <a href="/login">Log in</a>
-                    </li>
+                    {% if logged_in %}
+                        <li class="nav__list-item">
+                            <a href="#">User</a>
+                        </li>
+                    {% else %}
+                        <li class="nav__list-item">
+                            <a href="/login">Log in</a>
+                        </li>
+                    {% endif %}
                 </ul>
             </div>
             <!-- #endregion Right List -->

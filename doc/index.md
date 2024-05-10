@@ -12,3 +12,6 @@
 
 ### Want to know more about Docker 😎
 👉 [Click here](./details/docker.md)
+
+### Commit Rules
+👉 [Steps Document](./commit-rules.md)

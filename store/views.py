@@ -4,13 +4,15 @@ from .models import Product
 from django.template import loader
 from django.views import View
 from django.contrib.auth import authenticate, login, decorators
+from django.contrib.auth.forms import UserCreationForm
 
 
 class Index(View):
     def get(self, req):
+        logged_in = req.user.is_authenticated
         products = Product.objects.all().values()
         template = loader.get_template("pages/home.html")
-        context = {"products": products}
+        context = {"products": products, "logged_in": logged_in}
 
         return HttpResponse(template.render(context=context, request=req))
 
@@ -26,6 +28,15 @@ class ViewUser(View):
         pass
 
 
+class Register(View):
+    def get(self, req):
+        context = {}
+        return render(req, "pages/login/register.html", context=context)
+
+    def post(self, req):
+        pass
+
+
 class Login(View):
     def get(self, req):
         return render(req, "pages/login/login.html")
@@ -35,9 +46,17 @@ class Login(View):
         password = req.POST.get("password")
         current_user = authenticate(username=username, password=password)
         if current_user is None:
-            return HttpResponse("Login Failed, User does not exist!")
+            return render(req, "pages/login/login_fail.html")
         login(req, current_user)
         return render(req, "pages/login/login_success.html")
+
+
+class Logout(View):
+    def get(self, req):
+        pass
+
+    def post(self, req):
+        pass
 
 
 # def Cart(req):
