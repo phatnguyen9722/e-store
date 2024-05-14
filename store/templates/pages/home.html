@@ -16,9 +16,9 @@
     <h3 class="product_title">Product</h3>
     <hr>
     <div class="products">
-        {% for product in products|slice:":4" %} 
+        {% for product in products|slice:":5" %} 
         <div class="product-card">
-            <img class="product-img" src="" alt="">
+            <img class="product-img" src="{% get_media_prefix %}{{ product.image }}" alt="">
             <h5><strong>{{ product.title }}</strong></h5>
             <hr>
             <p>{{ product.description }}</p>
@@ -30,9 +30,9 @@
         {% endfor %}
     </div>
     <div class="products">
-        {% for product in products|slice:"4:8" %}
+        {% for product in products|slice:"5:9" %}
         <div class="product-card">
-            <img class="product-img" src="" alt="">
+            <img class="product-img" src="{% get_media_prefix %}{{ product.image }}" alt="">
             <h5><strong>{{ product.title }}</strong></h5>
             <hr>
             <p>{{ product.description }}</p>

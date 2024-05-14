@@ -37,7 +37,7 @@ nav {
 /* #region Slider */
 #slider {
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: blanchedalmond;
 }
 /* #endregion Slider */
@@ -54,22 +54,24 @@ nav {
 }
 
 .products {    
+    margin: 0 auto;
     padding-top: 1rem;
-    width: 100%;
+    width: 95%;
+    height: 290px;
+    padding-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .product-card {
-    flex-basis: 25%;
+    flex-basis: 20%;
     padding-right: 4rem;
     height: 190px;
 }
 
 .product-img {
-    width: 100%;
-    height: 100px;
-    background-color: blueviolet;
+    width: 90%;
+    height: 160px;
 }
 /* #endregion Content */
 
